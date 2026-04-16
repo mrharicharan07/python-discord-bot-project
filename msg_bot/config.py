@@ -1,0 +1,7 @@
+﻿import os
+
+MSG_BOT_TOKEN = os.getenv(
+    'MSG_BOT_TOKEN',
+    'PASTE_MSG_BOT_TOKEN_HERE',
+)
+PANEL_CHANNEL_ID = int(os.getenv('PANEL_CHANNEL_ID', '1416687758734524537'))
