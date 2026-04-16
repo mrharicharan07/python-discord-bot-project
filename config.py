@@ -1,0 +1,14 @@
+import os
+
+
+MAIN_BOT_KEY = os.getenv('MAIN_BOT_KEY', '')
+GROQ_API_KEY = os.getenv('GROQ_API_KEY', '')
+BOT_OWNER_ID = int(os.getenv('BOT_OWNER_ID', '0'))
+
+DEFAULT_PREFIX = os.getenv('BOT_PREFIX', '!')
+DEFAULT_WARN_THRESHOLD = int(os.getenv('DEFAULT_WARN_THRESHOLD', '60'))
+DEFAULT_MUTE_MINUTES = int(os.getenv('DEFAULT_MUTE_MINUTES', '5'))
+DEFAULT_MAX_WARNINGS = int(os.getenv('DEFAULT_MAX_WARNINGS', '3'))
+
+AI_REPLY_COOLDOWN_SECONDS = int(os.getenv('AI_REPLY_COOLDOWN_SECONDS', '20'))
+VOICE_RECONNECT_INTERVAL = int(os.getenv('VOICE_RECONNECT_INTERVAL', '45'))
